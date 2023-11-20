@@ -1,0 +1,20 @@
+<p>Tareas</p>
+
+<form>
+  <label for="txtUID">UID</label>
+  <p name="txtUID" id="txtUID" [(ngModel)]='tarea.uid'></p>
+  <label for="txtTarea">Tarea</label>
+  <br>
+  <input name="txtTarea" id="txtTarea" [(ngModel)]='tarea.tarea'>
+  <br>
+  <label for="txtFecha">Fecha</label>
+  <br>
+  <input name="txtFecha" id="txtFecha" [(ngModel)]='tarea.fecha'>
+  <br>
+  <label for="txtEtiq">Etiquetas (separadas por comas ',')</label>
+  <br>
+  <input name="txtEtiq" id="txtEtiq" [(ngModel)]='tarea.etiquetas'>
+  <br>
+  <button type="button" (click)="guardarTarea()">Agregar Tarea</button>
+  <button type="button" (click)="listarTareas()">Listar Tareas</button>
+</form>
